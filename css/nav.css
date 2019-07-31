@@ -1,0 +1,33 @@
+
+.page-nav{
+	background-color: #066A75;
+	 line-height:60px;
+}
+.container{
+	display:-ms-flexbox;
+	display:flexbox;
+	text-align:right;
+  }
+  a{
+   
+	min-width:9rem;
+	padding:0 1.8rem;
+	border-right:2px dotted black;
+	text-decoration:none;
+	text-align:center;
+	/* text-shadow:0 2px 0 #000; */
+	font-size:24px;
+	
+  }
+  a:first-child{
+	border-left:2px dotted black;
+	
+  }
+  a:hover{
+	color:black;
+	background: rgb(247, 247, 247);
+  }
+  .active{
+	color:#fff;
+	background-color: rgb(0, 204, 255);
+  }

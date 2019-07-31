@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+    <title></title>
+   
+    <b<html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="stylesheet" type="text/css" href="css/style.css" />
+              <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+              <link rel="stylesheet" type="text/css" href="css/style.css" />
+              <link rel="stylesheet" type="text/css" href="css/nav.css" />
+              <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+              <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+             
+             
+            </head>
+            <body>
+              <div class="page-nav">
+                <nav class="container">
+                    <a href="index.html">Home</a>
+                    <a href="register.html" target="blank">Login/Register</a>
+                    <a href="booking.html" target="blank">Book Appointment</a>
+                 
+                  </nav>
+                </nav>
+              </div>  
+          
+            <form action="">
+            <div class="dateTime">
+                <h2>Select the date of your doctor visit</h2>
+            <p>Date: <input type="text" class="datepicker"></p> 
+            <h2 class="appointmentTime">Please select the time of your appointment</h2>
+            <p>Time:<input type="time" class="timepicker"></p>
+            <p class="book button">
+            <button type="submit" onclick="submitted()">Submit</button>
+          </p>
+            </div>
+          </div>
+        </form>
+          <script>
+              $( function() {
+                $( ".datepicker" ).datepicker();
+              } );
+  
+              $(function(){
+              $('.timepicker').timepicker();
+              });
+
+            
+              function submitted(){
+                alert("Thank you! your appointment has been made")
+              }
+             
+        </script>
+          
+
+    </body>
+</html>
+ 

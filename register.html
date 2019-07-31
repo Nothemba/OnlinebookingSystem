@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+ <html lang="en" class="no-js"> 
+    <head></head>
+
+        <meta charset="UTF-8" />
+       
+        <title>Doctor FixMypain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/nav.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+
+
+<div class="container">
+    </header>
+    <div class="page-nav">
+        <nav class="container">
+            <a href="index.html">Home</a>
+            <a href="register.html" target="blank">Login/Register</a>
+            <a href="booking.html" target="blank">Book Appointment</a>
+         
+          </nav>
+        </nav>
+      </div>
+        </nav>
+        <h2>Login or Register to make appointment</h2>
+     <section>				
+        <div id="container_register" >
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form  form method="POST" action="/post-feedback" autocomplete="on"> 
+                        <h1>Log in</h1> 
+                        <p> 
+                            <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                            <input id="username" name="username" required="required" type="text" placeholder="name@dmain.com"/>
+                            </p>
+                            <p> 
+                            <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                            <input id="password" name="password" required="required" type="password" placeholder="12234@abc" /> 
+                            </p>
+                            <p class="keeplogin"> 
+                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                <label for="loginkeeping">Keep me logged in</label>
+                            </p>
+                            <p class="login button"> 
+    
+                                <input type="submit" name="b1" value="Login" onclick="location.href='booking.html'">
+                            </p>
+                            <p class="change_link">
+                                Not a member yet ?
+                                <a href="#toregister" class="to_register">Join us</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div id="register" class="animate form">
+                        <form action ="POST" action="/post-feedback"> 
+                            <h1> Sign up </h1> 
+                            <p> 
+                                <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                            </p>
+                            <p> 
+                                <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                            </p>
+                            <p> 
+                                <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="1234@abc"/>
+                            </p>
+                            <p> 
+                                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="1234@abc"/>
+                            </p>
+                            <p class="signin button"> 
+                                <input type="submit" value="Sign up"/> 
+                            </p>
+                            <p class="change_link">  
+                                Already a member ?
+                                <a href="#tologin" class="to_register"> Go and log in </a>
+                                <script src="register.js"></script>
+                            </p>
+                        </form>
+                        <a href="/view-feedbacks">View feedbacks</a>
+                    
+                    
+                </div>
+            </div>  
+        </section>
+    </div>
+</body>
+</html>    
